@@ -17,6 +17,7 @@ public class UserService {
     public UserService(UserRepository userRepository, PasswordEncoder passwordEncoder, JwtUtil jwtUtil) {
         this.userRepository = userRepository;
         this.passwordEncoder = passwordEncoder;
+        
         this.jwtUtil = jwtUtil;
     }
 
