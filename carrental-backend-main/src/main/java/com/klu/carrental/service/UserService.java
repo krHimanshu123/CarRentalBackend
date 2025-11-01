@@ -29,6 +29,7 @@ public class UserService {
         user.setEmail(email);
         user.setPassword(passwordEncoder.encode(password));
         userRepository.save(user);
+        
         return "User registered successfully!";
     }
 
